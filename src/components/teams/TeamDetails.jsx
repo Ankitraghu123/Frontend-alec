@@ -16,7 +16,7 @@
 //     const fetchProduct = async () => {
 //       try {
 //         setLoading(true);
-//         const res = await axios.get(`https://backend-alic-5.onrender.com/member/${id}`);
+//         const res = await axios.get(`https://backend.aashayeinjudiciary.com/member/${id}`);
 //         console.log(res)
 //         setProduct(res.data);
 //       } catch (err) {
@@ -282,7 +282,7 @@
 //     const fetchMember = async () => {
 //       try {
 //         setLoading(true);
-//         const res = await axios.get(`https://backend-alic-5.onrender.com/member/${id}`);
+//         const res = await axios.get(`https://backend.aashayeinjudiciary.com/member/${id}`);
 //         setMember(res.data);
 //       } catch (err) {
 //         console.error("Failed to fetch member", err);
@@ -437,7 +437,7 @@ export const TeamDetails = () => {
     const fetchMember = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`https://backend-alic-5.onrender.com/member/${id}`);
+        const res = await axios.get(`https://backend.aashayeinjudiciary.com/member/${id}`);
         setMember(res.data);
       } catch (err) {
         console.error("Failed to fetch member", err);

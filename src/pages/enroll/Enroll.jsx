@@ -33,7 +33,7 @@
 //    const loadProducts=async()=>{
 
 //     try {
-//       const response = await axios.get(`https://backend-alic-5.onrender.com/enroll/getproducts/${id}`);
+//       const response = await axios.get(`https://backend.aashayeinjudiciary.com/enroll/getproducts/${id}`);
 //       const prodductData= response.data;
 //       setProductData(prodductData);
 //     } catch (error) {
@@ -158,7 +158,7 @@ export const Enroll = () => {
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        const response = await axios.get(`https://backend-alic-5.onrender.com/enroll/getproducts/${id}`);
+        const response = await axios.get(`https://backend.aashayeinjudiciary.com/enroll/getproducts/${id}`);
         setProductData(response.data);
       } catch (error) {
         console.error("Error loading product data:", error);
@@ -201,7 +201,7 @@ export const Enroll = () => {
     }
 
     try {
-      const response = await axios.post(`https://backend-alic-5.onrender.com/enroll/${id}`, formData);
+      const response = await axios.post(`https://backend.aashayeinjudiciary.com/enroll/${id}`, formData);
       console.log("Form submitted successfully:", response.data);
       alert("Enrollment submitted successfully!");
 

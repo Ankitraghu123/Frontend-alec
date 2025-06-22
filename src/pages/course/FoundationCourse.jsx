@@ -118,7 +118,7 @@
 //   const fetchCourses = async () => {
 //     setLoading(true);
 //     try {
-//       const response = await axios.get('https://backend-alic-5.onrender.com/api/alldisplay');
+//       const response = await axios.get('https://backend.aashayeinjudiciary.com/api/alldisplay');
 //       if (response.data) {
 //         setCourses(response.data);
 //       }
@@ -231,7 +231,7 @@
 //   const fetchCourses = async () => {
 //     setLoading(true);
 //     try {
-//       const response = await axios.get('https://backend-alic-5.onrender.com/api/alldisplay');
+//       const response = await axios.get('https://backend.aashayeinjudiciary.com/api/alldisplay');
 //       if (response.data) {
 //         setCourses(response.data);
 //       }
@@ -371,7 +371,7 @@
 //   const fetchCourses = async () => {
 //     setLoading(true);
 //     try {
-//       const response = await axios.get('https://backend-alic-5.onrender.com/api/alldisplay');
+//       const response = await axios.get('https://backend.aashayeinjudiciary.com/api/alldisplay');
 //       if (response.data) {
 //         setCourses(response.data);
 //         // Initial filter when data is first loaded
@@ -521,7 +521,7 @@ const FoundationCourses = ({ selectedCategoryId, selectedSubCategoryId }) => {
   const fetchCourses = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('https://backend-alic-5.onrender.com/api/alldisplay');
+      const response = await axios.get('https://backend.aashayeinjudiciary.com/api/alldisplay');
       if (response.data) {
         setCourses(response.data);
         // Prioritize courseId (subcategory ID) from useParams, then fallback to selectedSubCategoryId
@@ -606,11 +606,13 @@ const FoundationCourses = ({ selectedCategoryId, selectedSubCategoryId }) => {
                       alt="Course"
                       style={{ height: '250px', objectFit: 'cover' }}
                     />
-                    <span className="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 small">
-                     ₹ {course.Price}
-                    </span>
+                  
                   </div>
                   <Card.Body className="p-3">
+                     <div className="d-flex align-items-center justify-content-center">
+                        
+                        <span className='text-center fw-bold fs-5'>{course.subCategory.name || 'N/A'}</span>
+                      </div>
                     <Card.Title className="fs-5 text-primary mb-2">{course.title}</Card.Title>
                     {/* <ul className="mb-2 ps-3 small text-muted">
                       {course.features && course.features.length > 0 ? (
@@ -622,6 +624,24 @@ const FoundationCourses = ({ selectedCategoryId, selectedSubCategoryId }) => {
                       )}
                     </ul> */}
                     <div className="small">
+
+  
+
+                         <div className="d-flex justify-content-between">
+                        <span className="fw-semibold">Judicarysss:</span>
+                        <span>{course?.subsubCategory?.name || 'N/A'}</span>
+                      </div>
+
+
+<div className="d-flex justify-content-between">
+                        <span className="fw-semibold">Price:</span>
+                        <span >
+                     ₹ {course.Price}
+                    </span>
+                      </div>
+
+                       
+
                       <div className="d-flex justify-content-between">
                         <span className="fw-semibold">Duration:</span>
                         <span>{course.Durations || 'N/A'}</span>

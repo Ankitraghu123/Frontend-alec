@@ -27,7 +27,7 @@
 
 //   // Handle form submission
 //   // const submitCallback = () => {
-//   //   const api = "https://backend-alic-5.onrender.com/Callback/add"
+//   //   const api = "https://backend.aashayeinjudiciary.com/Callback/add"
 //   //     axios.post(api)
 //   //   if (!name || !phone) {
 //   //     alert("Please fill out both fields.");
@@ -43,7 +43,7 @@
 //     return;
 //   }
 
-//   const api = "https://backend-alic-5.onrender.com/Callback/add";
+//   const api = "https://backend.aashayeinjudiciary.com/Callback/add";
 //   const data = { name, phone };
 
 //   axios.post(api, data)
@@ -154,7 +154,7 @@ export const CallbackPopup = () => {
 
     setIsSubmitting(true);
 
-    const api = "https://backend-alic-5.onrender.com/Callback/add";
+    const api = "https://backend.aashayeinjudiciary.com/Callback/add";
     const data = { name, phone };
 
     axios.post(api, data)

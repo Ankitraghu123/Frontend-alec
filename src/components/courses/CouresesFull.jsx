@@ -30,7 +30,7 @@ const CouresesFull = () => {
         setError(null);
 
         // Fetch the main course data
-        const courseResponse = await axios.get(`https://backend-alic-5.onrender.com/api/courses/${id}`);
+        const courseResponse = await axios.get(`https://backend.aashayeinjudiciary.com/api/courses/${id}`);
         if (!courseResponse.data) {
           throw new Error('Course not found');
         }
@@ -44,7 +44,7 @@ const CouresesFull = () => {
             : courseResponse.data.category;
 
           // const relatedResponse = await axios.get(
-          //   `https://backend-alic-5.onrender.com/api/courses?category=${categoryId}&limit=4&exclude=${id}`
+          //   `https://backend.aashayeinjudiciary.com/api/courses?category=${categoryId}&limit=4&exclude=${id}`
           // );
           // setRelatedCourses(relatedResponse.data);
         }
@@ -252,7 +252,7 @@ const CouresesFull = () => {
                   <Button
                     variant="primary"
                     size="lg"
-                    className="w-100 fw-bold shadow-sm py-2 mb-3"
+                    className="th-btn td_btn_in td_white_color td_accent_bg py-2 border-0 rounded w-100 fw-semibold"
                     onClick={() => handleCourseClick(course._id)}
                   >
                     🚀 Enroll Now

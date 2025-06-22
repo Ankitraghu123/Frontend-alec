@@ -26,7 +26,7 @@ export const CoursesOne = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch('https://backend-alic-5.onrender.com/api/allcourse');
+        const response = await fetch('https://backend.aashayeinjudiciary.com/api/allcourse');
         if (!response.ok) {
           throw new Error('Failed to fetch courses');
         }
@@ -137,7 +137,7 @@ export default CoursesOne;
 
 // export const CoursesOne = () => {
 //   const [courses, setCourses] = useState([]);
-//   const api = 'https://backend-alic-5.onrender.com/api/allcourse';
+//   const api = 'https://backend.aashayeinjudiciary.com/api/allcourse';
 
 //   useEffect(() => {
 //     const fetchCourses = async () => {

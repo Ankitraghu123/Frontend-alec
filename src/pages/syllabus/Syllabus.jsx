@@ -23,7 +23,7 @@ export const SyllabusDownload = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`https://backend-alic-5.onrender.com/syllabus/category/${id}`);
+        const res = await axios.get(`https://backend.aashayeinjudiciary.com/syllabus/category/${id}`);
         setSyllabusData(res.data);
       } catch (err) {
         setError(err.message);
@@ -66,7 +66,7 @@ export const SyllabusDownload = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://backend-alic-5.onrender.com/register/add", formData);
+      await axios.post("https://backend.aashayeinjudiciary.com/register/add", formData);
       if (selectedSyllabus?.pdfUrl) {
         handleDownloadPdf(selectedSyllabus.pdfUrl, selectedSyllabus.Coursename);
       }
@@ -124,7 +124,7 @@ const SyllabusTable = ({ syllabusData, onDownloadClick }) => (
             <tr key={item._id}>
               <td>{item.Coursename}</td>
               <td>
-                <Button variant="link" onClick={() => onDownloadClick(item)}>
+                <Button className="th-btn td_btn_in td_white_color td_accent_bg py-2 border-0 rounded  fw-semibold" onClick={() => onDownloadClick(item)}>
                   Download
                 </Button>
               </td>

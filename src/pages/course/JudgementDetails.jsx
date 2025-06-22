@@ -116,7 +116,7 @@
 //     const fetchProduct = async () => {
 //       try {
 //         setLoading(true);
-//         const res = await axios.get(`https://backend-alic-5.onrender.com/judement/course/${id}`);
+//         const res = await axios.get(`https://backend.aashayeinjudiciary.com/judement/course/${id}`);
 //         setProduct(res.data);
 //       } catch (err) {
 //         console.error("Failed to fetch product", err);
@@ -176,7 +176,7 @@ export const JudgementDetails = ({ courseId }) => {
       try {
         setLoading(true);
         setError(false);
-        const res = await axios.get(`https://backend-alic-5.onrender.com/judement/course/${id}`);
+        const res = await axios.get(`https://backend.aashayeinjudiciary.com/judement/course/${id}`);
         setProduct(res.data);
       } catch (err) {
         console.error("Failed to fetch product", err);

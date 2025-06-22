@@ -5,7 +5,7 @@ export const submitEnquiry = createAsyncThunk(
   "enquiry/submitEnquiry",
   async (formData, { rejectWithValue }) => {
     try {
-      const response = await axios.post("https://backend-alic-5.onrender.com/enquiry/add", formData);
+      const response = await axios.post("https://backend.aashayeinjudiciary.com/enquiry/add", formData);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || "Something went wrong");

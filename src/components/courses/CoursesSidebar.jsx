@@ -43,8 +43,8 @@ export const CoursesSidebar = ({ onCategorySelect }) => {
   return (
     <>
       {/* Mobile Toggle Button */}
-      <div className="d-lg-none d-flex align-items-center mb-0 justify-content-between mt-3 p-3">
-          <h5 className="mb-0">Explore Our Jugement</h5>
+      <div className="d-lg-none d-flex align-items-center mb-3 justify-content-between mt-4 ">
+          <h5 className="fs-4 mb-0">Explore Our Jugement</h5>
         <button
           className="btn btn-danger  shadow"
           type="button"
@@ -52,7 +52,7 @@ export const CoursesSidebar = ({ onCategorySelect }) => {
           data-bs-target="#mobileSidebar"
           aria-controls="mobileSidebar"
         >
-          <i className="bi bi-funnel-fill me-2"></i>Open Filter
+          <i className="bi bi-funnel-fill "></i>Open Filter
         </button>
       </div>
 

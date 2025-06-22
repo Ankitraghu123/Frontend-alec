@@ -75,7 +75,7 @@
 //     const fetchCourses = async () => {
 //         setLoading(true);
 //         try {
-//             const response = await axios.get('https://backend-alic-5.onrender.com/test/display');
+//             const response = await axios.get('https://backend.aashayeinjudiciary.com/test/display');
 //             if (response.data && Array.isArray(response.data.data)) {
 //                 setCourses(response.data.data);
 //             } else {
@@ -282,7 +282,7 @@ const PrelimsTestSeries = ({ selectedCategoryId }) => {
     const fetchCourses = async () => {
         setLoading(true);
         try {
-            const response = await axios.get('https://backend-alic-5.onrender.com/test/display');
+            const response = await axios.get('https://backend.aashayeinjudiciary.com/test/display');
             if (response.data && Array.isArray(response.data.data)) {
                 setCourses(response.data.data);
             } else {
@@ -380,22 +380,31 @@ const PrelimsTestSeries = ({ selectedCategoryId }) => {
                                     </div>
                                 )}
 
-                                <Card.Header className="bg-white d-flex justify-content-between align-items-center">
-                                    <Card.Title className="mb-0">
+                                <Card.Header className="bg-white d-flex justify-content-center  align-items-center">
+                                    <Card.Title className="mb-0 fs-5 fw-bold">
                                         {test.testmodule}
                                     </Card.Title>
-                                    <span style={{ color: "#C81A1E" }} className="fw-bold">
-                                        ₹{test.Price}
-                                    </span>
+                                    
                                 </Card.Header>
                                 <Card.Body>
-                                    <h6>Features:</h6>
+                                    {/* <h6>Features:</h6>
                                     <div
                                         className="mb-3"
                                         dangerouslySetInnerHTML={{ __html: sanitizeHtml(test.CourseDescription) }}
-                                    />
+                                    /> */}
 
                                     <div className="card-text">
+                                        
+                                         <div className="d-flex justify-content-between mb-2 border-bottom">
+                                            <span className="fw-bold">Judicary:</span>
+                                            <span>{test.subsubCategory.name}</span>
+                                        </div>
+
+                                           <div className="d-flex justify-content-between mb-2 border-bottom">
+                                            <span className="fw-bold">Course:</span>
+                                            <span>{test.subsubCategory.subCategory}</span>
+                                        </div>
+
                                         <div className="d-flex justify-content-between mb-2 border-bottom">
                                             <span className="fw-bold">Price:</span>
                                             <span>₹{test.Price}</span>

@@ -4,7 +4,7 @@ import blogDetails1 from "../../assets/alec-img/judgement/2.jpg"
 export const JudgementDetailContent = ({ children }) => {
   return (
     <section id="margin-top">
-      <div className="td_height_20 td_height_lg_20" />
+      <div className="td_height_20 td_height_lg_30" />
       <div className="container">
         <div>
           <h4>Balaji Raghavan v. Union of India (1996) 1 SCC 361</h4>
@@ -59,7 +59,7 @@ export const JudgementDetailContent = ({ children }) => {
 //     const fetchProduct = async () => {
 //       try {
 //         setLoading(true);
-//         const res = await axios.get(`https://backend-alic-5.onrender.com/judement/course/${id}`);
+//         const res = await axios.get(`https://backend.aashayeinjudiciary.com/judement/course/${id}`);
 //         setProduct(res.data);
 //       } catch (err) {
 //         console.error("Failed to fetch product", err);

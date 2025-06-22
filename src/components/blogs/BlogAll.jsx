@@ -27,7 +27,7 @@
 
 //   const fetchBlogs = async () => {
 //     try {
-//       const response = await fetch('https://backend-alic-5.onrender.com/blog/display');
+//       const response = await fetch('https://backend.aashayeinjudiciary.com/blog/display');
 //       if (!response.ok) throw new Error('Failed to fetch blogs');
 //       const data = await response.json();
 //       const blogsArray = Array.isArray(data) ? data : data.data || [];
@@ -124,6 +124,8 @@
 //   );
 // };
 
+
+
 import React, { useState, useEffect } from "react";
 import { BlogPagination } from "./BlogPagination";
 import { BlogItem } from "./BlogItem";
@@ -158,7 +160,7 @@ export const BlogAll = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await fetch('https://backend-alic-5.onrender.com/blog/display');
+      const response = await fetch('https://backend.aashayeinjudiciary.com/blog/display');
       if (!response.ok) throw new Error('Failed to fetch blogs');
       const data = await response.json();
       const blogsArray = Array.isArray(data) ? data : data.data || [];
@@ -190,7 +192,7 @@ export const BlogAll = () => {
 
   return (
     <section id="margin-top">
-      <div className="td_height_10 td_height_lg_10" />
+      <div className="td_height_10 td_height_lg_20" />
       <div className="container">
 <h3 className="text-center  fw-bold mb-4 d-none d-sm-block">
   <span style={{ borderBottom: "3px solid red", paddingBottom: "5px" }}>

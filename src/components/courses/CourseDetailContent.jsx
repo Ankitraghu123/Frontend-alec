@@ -36,7 +36,7 @@ export const CourseDetailContent = ({ courseId }) => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`https://backend-alic-5.onrender.com/api/${id}`);
+        const res = await axios.get(`https://backend.aashayeinjudiciary.com/api/${id}`);
         console.log(res.data)
         setProduct(res.data);
       } catch (err) {

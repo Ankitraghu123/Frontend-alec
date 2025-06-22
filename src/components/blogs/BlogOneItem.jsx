@@ -6,7 +6,13 @@ import userIcon from "../../assets/img/icons/user.svg";
 
 export const BlogOneItem = ({ src, date, author, title, description, blogId,
   link = "/blog-details", }) => {
-  return (
+  
+  
+
+    console.log(blogId, "LLIIJKLJHKJHKh")
+  
+  
+    return (
     <div className="td_post td_style_1">
       <Link  to={`${link}/${blogId}`}>
       <div id="block-section" className="td_post_thumb d-block">

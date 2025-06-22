@@ -148,7 +148,7 @@ const DetailSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://backend-alic-5.onrender.com/whatsnew/${id}`);
+        const response = await fetch(`https://backend.aashayeinjudiciary.com/whatsnew/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
@@ -257,11 +257,19 @@ const DetailSection = () => {
                 </span>
                 {new Date(whatsNew.createdAt).toLocaleDateString()}
               </div>
-              <p
+              {/* <p
                 className="lead text-muted"
                 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(whatsNew.CourseDescription || 'No description available') }}
-              />
-
+              /> */}
+   <p
+  className="lead text-muted"
+  dangerouslySetInnerHTML={{ 
+    __html: DOMPurify.sanitize(
+      (whatsNew.CourseDescription || 'No description available')
+        .replace(/<img[^>]*>/g, '') // Remove all <img> tags
+    ) 
+  }}
+/>
               {/* Download PDF Button */}
               <button
                 onClick={handleDownload}

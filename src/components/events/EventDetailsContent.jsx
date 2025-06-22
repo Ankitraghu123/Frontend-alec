@@ -19,7 +19,7 @@ export const EventDetailsContent = () => {
     const fetchEvent = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`https://backend-alic-5.onrender.com/event/${id}`);
+        const res = await axios.get(`https://backend.aashayeinjudiciary.com/event/${id}`);
         setEvent(res.data);
       } catch (err) {
         console.error("Failed to fetch event", err);
@@ -43,6 +43,9 @@ export const EventDetailsContent = () => {
         year: 'numeric'
       })
     : 'Date not specified';
+
+
+   
 
   // Sanitize HTML content
   const sanitizedDescription = event.Description 
@@ -236,11 +239,11 @@ export const EventDetailsContent = () => {
                 </ul>
               </div>
               <Link
-                to="/courses-grid-view"
+                to="/enquiry"
                 className="td_btn td_style_1 td_radius_10 td_medium w-100 td_mb_20"
               >
                 <span className="td_btn_in td_white_color td_accent_bg">
-                  <span>Buy Now</span>
+                  <span>Enroll now</span>
                 </span>
               </Link>
               <p className="text-center td_fs_18 td_heading_color td_opacity_7 td_mb_15">

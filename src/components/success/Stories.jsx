@@ -41,7 +41,7 @@
 //    useEffect(() => {
 //     const fetchStories = async () => {
 //       try {
-//         const response = await fetch("https://backend-alic-5.onrender.com/success/display");
+//         const response = await fetch("https://backend.aashayeinjudiciary.com/success/display");
 //         if (!response.ok) {
 //           throw new Error("Failed to fetch success stories");
 //         }
@@ -137,7 +137,7 @@ export const SuccessStory = () => {
   useEffect(() => {
     const fetchStories = async () => {
       try {
-        const response = await fetch("https://backend-alic-5.onrender.com/success/display");
+        const response = await fetch("https://backend.aashayeinjudiciary.com/success/display");
         if (!response.ok) {
           throw new Error("Failed to fetch success stories");
         }

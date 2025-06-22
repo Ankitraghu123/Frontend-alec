@@ -20,7 +20,7 @@
 //     const [loading, setLoading] = useState(true);
 //     const [error, setError] = useState(null);
 
-//     const apiUrl = 'https://backend-alic-5.onrender.com/member/display';
+//     const apiUrl = 'https://backend.aashayeinjudiciary.com/member/display';
 
 
 
@@ -168,7 +168,7 @@ export const TeamOne = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  const apiUrl = 'https://backend-alic-5.onrender.com/member/display';
+  const apiUrl = 'https://backend.aashayeinjudiciary.com/member/display';
 
   useHobble();
 

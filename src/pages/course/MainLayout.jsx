@@ -25,29 +25,7 @@ const CourseLayout = () => {
   const [subCategoryShow, setSubCategoryShow] = useState([])
   const { id } = useParams();
 
-  // useEffect(() => {
-  //   const fetchInitialData = async () => {
-  //     if (id) {
-  //       try {
-  //         // Fetch subcategory by ID
-  //         const subCategoryResponse = await axios.get(`${base_url}subsubcategory`);
-  //         console.log(subCategoryResponse.data)
-  //         const subCategory = subCategoryResponse.data.find(subCat => subCat._id === id);
-  //         if (subCategory) {
-  //           setSubCategoryShow(subCategory)
-  //           setSelectedSubCategoryId(id);
-  //           setSelectedCategoryId(subCategory.category); // Assuming subcategory has a category field with category ID
-  //         } else {
-  //           toast.error("Subcategory not found.");
-  //         }
-  //       } catch (error) {
-  //         console.error("Error fetching subcategory:", error);
-  //         toast.error("Failed to load subcategory data. Please try again.");
-  //       }
-  //     }
-  //   };
-  //   fetchInitialData();
-  // }, [id]);
+
 
 
 const [loading, setLoading] = useState(false);

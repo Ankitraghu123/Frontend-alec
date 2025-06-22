@@ -31,7 +31,7 @@
 //       const fetchCourses = async () => {
 //         setLoading(true);
 //         try {
-//           const response = await axios.get('https://backend-alic-5.onrender.com/api/alldisplay');
+//           const response = await axios.get('https://backend.aashayeinjudiciary.com/api/alldisplay');
 //           if (response.data) {
 //             setCourses(response.data);
 //             // Prioritize courseId (subcategory ID) from useParams, then fallback to selectedSubCategoryId
@@ -174,7 +174,7 @@ const TargetJudiciaryCourse = ({ selectedCategoryId, selectedSubCategoryId }) =>
     // const fetchCourses = async () => {
     //     setLoading(true);
     //     try {
-    //         const response = await axios.get('https://backend-alic-5.onrender.com/api/alldisplay');
+    //         const response = await axios.get('https://backend.aashayeinjudiciary.com/api/alldisplay');
     //         if (response.data) {
     //             setCourses(response.data);
     //             // Prioritize courseId (subcategory ID) from useParams, then fallback to selectedSubCategoryId

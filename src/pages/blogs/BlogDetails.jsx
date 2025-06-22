@@ -30,7 +30,7 @@
 //     const fetchProduct = async () => {
 //       try {
 //         setLoading(true);
-//         const res = await axios.get(`https://backend-alic-5.onrender.com/blog/${id}`);
+//         const res = await axios.get(`https://backend.aashayeinjudiciary.com/blog/${id}`);
 //         console.log(res)
 //         setProduct(res.data);
 //       } catch (err) {
@@ -241,7 +241,7 @@
 //     const fetchProduct = async () => {
 //       try {
 //         setLoading(true);
-//         const res = await axios.get(`https://backend-alic-5.onrender.com/blog/${id}`);
+//         const res = await axios.get(`https://backend.aashayeinjudiciary.com/blog/${id}`);
 //         setProduct(res.data);
 //       } catch (err) {
 //         console.error("Failed to fetch product", err);
@@ -443,7 +443,7 @@ export const BlogDetails = ({ courseId }) => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`https://backend-alic-5.onrender.com/blog/${id}`);
+        const res = await axios.get(`https://backend.aashayeinjudiciary.com/blog/${id}`);
         setProduct(res.data);
       } catch (err) {
         console.error("Failed to fetch product", err);

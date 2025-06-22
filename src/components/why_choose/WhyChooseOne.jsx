@@ -13,7 +13,7 @@ export const WhyChooseOne = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const api = 'https://backend-alic-5.onrender.com/choose/display';
+  const api = 'https://backend.aashayeinjudiciary.com/choose/display';
 
   useEffect(() => {
     const fetchItems = async () => {

@@ -121,7 +121,7 @@ export const Slider = () => {
   useEffect(() => {
     const fetchStories = async () => {
       try {
-        const response = await axios.get("https://backend-alic-5.onrender.com/url/display");
+        const response = await axios.get("https://backend.aashayeinjudiciary.com/url/display");
         setStories(response.data.data);
         console.log(stories,'aaaaaaaaaaaaaaaaaaaaaaaaaa')
       } catch (err) {

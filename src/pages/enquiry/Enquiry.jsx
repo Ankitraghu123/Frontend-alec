@@ -32,7 +32,7 @@
 //     setSubmitStatus(null);
 
 //     try {
-//       const response = await axios.post("https://backend-alic-5.onrender.com/enquiry/add", formData);
+//       const response = await axios.post("https://backend.aashayeinjudiciary.com/enquiry/add", formData);
 //       console.log("API Response:", response.data);
 //       setSubmitStatus({
 //         success: true,
@@ -209,7 +209,7 @@ export const Enquiry = () => {
     }
 
     try {
-      const response = await axios.post("https://backend-alic-5.onrender.com/enquiry/add", formData);
+      const response = await axios.post("https://backend.aashayeinjudiciary.com/enquiry/add", formData);
       console.log("API Response:", response.data);
       setSubmitStatus({
         success: true,

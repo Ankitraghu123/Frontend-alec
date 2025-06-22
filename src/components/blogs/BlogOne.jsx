@@ -25,7 +25,7 @@ export const BlogOne = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await fetch('https://backend-alic-5.onrender.com/blog/display');
+      const response = await fetch('https://backend.aashayeinjudiciary.com/blog/display');
       if (!response.ok) {
         throw new Error('Failed to fetch blogs');
       }
@@ -35,7 +35,7 @@ export const BlogOne = () => {
 
       const blogsArray = Array.isArray(data) ? data : data.data || [];
       setBlogs(blogsArray);
-      
+
       setLoading(false);
     } catch (err) {
       console.error(err);
@@ -44,10 +44,13 @@ export const BlogOne = () => {
       setLoading(false);
     }
   };
-const handleCourseClick = (blogId) => {
-  console.log('Navigating to blog with ID:', blogId);
-  navigate(`/blog-details/${blogId}`);
-};
+  const handleCourseClick = (blogId) => {
+
+console.log(blogId, "LLL")
+
+    console.log('Navigating to blog with ID:', blogId);
+    navigate(`/blog-details/${blogId}`);
+  };
   // Fallback blog posts if API fails
   const fallbackBlogPosts = [
     {
@@ -132,13 +135,14 @@ const handleCourseClick = (blogId) => {
           className="blog-slider"
         >
           {displayBlogs.map((blog, index) => {
+          
             // Format date from LastDate if it exists
             const blogDate = blog.LastDate
               ? new Date(blog.LastDate).toLocaleDateString('en-GB', {
-                  day: 'numeric',
-                  month: 'short',
-                  year: 'numeric'
-                })
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric'
+              })
               : blog.date || "No date";
 
             // Use first image from images array if available, otherwise use fallback image
@@ -149,18 +153,19 @@ const handleCourseClick = (blogId) => {
             const delay = `0.${index + 2}s`;
 
             return (
-             <SwiperSlide key={blog._id || index}>
-  <div className="wow fadeInUp" data-wow-duration="1s" data-wow-delay={delay}>
-    <BlogOneItem
-      src={blogImage}
-      date={blogDate}
-      author={blog.author || "Unknown Author"}
-      title={blog.title || "No Title"}
-      description={blog.description || blog.excerpt || "No description available"}
-      onClick={() => handleCourseClick(blogId._id || `fallback-${index}`)}
-    />
-  </div>
-</SwiperSlide>
+              <SwiperSlide key={blog._id || index}>
+                <div className="wow fadeInUp" data-wow-duration="1s" data-wow-delay={delay}>
+                  <BlogOneItem
+                    src={blogImage}
+                    date={blogDate}
+                    author={blog.author || "Unknown Author"}
+                    title={blog.title || "No Title"}
+                    description={blog.description || blog.excerpt || "No description available"}
+                    // onClick={() => handleCourseClick(blog._id )}
+                    blogId={blog._id}
+                  />
+                </div>
+              </SwiperSlide>
 
 
             );

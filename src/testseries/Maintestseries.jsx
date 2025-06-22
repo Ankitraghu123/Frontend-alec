@@ -29,7 +29,7 @@ export const Maintestseries = ({ courseId }) => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`https://backend-alic-5.onrender.com/main/maintestseries/${id}`);
+        const res = await axios.get(`https://backend.aashayeinjudiciary.com/main/maintestseries/${id}`);
         setProduct(res.data);
       } catch (err) {
         console.error("Failed to fetch product", err);

@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "../Redux/config/axios";
 
-const API_URL = "https://backend-alic-5.onrender.com/banner";
+const API_URL = "https://backend.aashayeinjudiciary.com/banner";
 
 // Get all course names
 export const CourseName = createAsyncThunk(

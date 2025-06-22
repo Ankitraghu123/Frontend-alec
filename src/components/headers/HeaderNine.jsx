@@ -17,7 +17,7 @@
 //   //   const fetchCategories = async () => {
 //   //     setLoading(true);
 //   //     try {
-//   //       const response = await fetch("https://backend-alic-5.onrender.com/category");
+//   //       const response = await fetch("https://backend.aashayeinjudiciary.com/category");
 //   //       const data = await response.json();
 //   //       if (data) {
 //   //         setCategories(data);
@@ -232,7 +232,7 @@
 //     }
 //   };
 //   const Syllabus = async () => {
-//     const api = "https://backend-alic-5.onrender.com/syllabuscategory"; // syllabuscategory API
+//     const api = "https://backend.aashayeinjudiciary.com/syllabuscategory"; // syllabuscategory API
 
 //     try {
 //       const response = await axios.get(api);
@@ -415,7 +415,7 @@ export const HeaderNine = () => {
   };
 
   const fetchSyllabusCategories = async () => {
-    const api = "https://backend-alic-5.onrender.com/syllabuscategory"; // syllabuscategory API
+    const api = "https://backend.aashayeinjudiciary.com/syllabuscategory"; // syllabuscategory API
 
     try {
       const response = await axios.get(api);
@@ -504,7 +504,7 @@ export const HeaderNine = () => {
                                 <Link
                                   to={`/coursesone/${category?._id}`}
                                   className="dropdown-item"
-                                  onClick={() => setSelectedCategory(category._id)}
+                                  onClick={() => setSelectedCategory(category?._id)}
                                 >
                                   {category.name}
                                 </Link>

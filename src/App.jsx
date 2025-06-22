@@ -75,18 +75,18 @@ function App() {
         <Route path="/judgements" element={< Judgement/>} />
         <Route path="/judgements/:id" element={< Judgement/>} />
 
-        <Route path="/judgements/:id" element={< Judgement/>} />
+        {/* <Route path="/judgements/:id" element={< Judgement/>} /> */}
         {/* <Route path="/courses/:id" element={<CoursesOne/>}/> */}
 
 
-     
+
         <Route path="/judgements-details/:id" element={< JudgementDetails/>} />
         <Route path="/course-details/:id" element={<CoursesDetails />} />
         <Route path="/foundation" element={<Foundation />} />
         <Route path="/coursesone" element={<CoursesPage />} />
         <Route path="/coursesone/:courseId" element={<CoursesPage />} />
         <Route path="/foundation-courses" element={<FoundationCourses />} />
-      
+
 
         {/* <Route path="/foundation-courses/:id" element={<FoundationCoursess/>} /> */}
 

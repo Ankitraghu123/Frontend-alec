@@ -33,7 +33,7 @@ const MainSeriesdeatils = () => {
         setError(null);
         
         // Fetch the main test series data
-        const response = await axios.get(`https://backend-alic-5.onrender.com/main/maintestseries/${id}`);
+        const response = await axios.get(`https://backend.aashayeinjudiciary.com/main/maintestseries/${id}`);
         console.log(response,'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
         if (!response.data) {
           throw new Error('Test series not found');
@@ -49,7 +49,7 @@ const MainSeriesdeatils = () => {
             : response.data.category;
           
           // const relatedResponse = await axios.get(
-          //   `https://backend-alic-5.onrender.com/test/preseries?category=${categoryId}&limit=4&exclude=${id}`
+          //   `https://backend.aashayeinjudiciary.com/test/preseries?category=${categoryId}&limit=4&exclude=${id}`
           // );
           // setRelatedTestSeries(relatedResponse.data);
         }

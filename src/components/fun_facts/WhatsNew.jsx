@@ -92,7 +92,7 @@
 //   useEffect(() => {
 //     const fetchWhatsNew = async () => {
 //       try {
-//         const response = await fetch("https://backend-alic-5.onrender.com/whatsnew/alldisplay");
+//         const response = await fetch("https://backend.aashayeinjudiciary.com/whatsnew/alldisplay");
 //         if (!response.ok) {
 //           throw new Error("Failed to fetch WhatsNew entries");
 //         }
@@ -310,7 +310,7 @@ export default function RecentUpdates() {
   useEffect(() => {
     const fetchWhatsNew = async () => {
       try {
-        const response = await fetch("https://backend-alic-5.onrender.com/whatsnew/alldisplay");
+        const response = await fetch("https://backend.aashayeinjudiciary.com/whatsnew/alldisplay");
         if (!response.ok) {
           throw new Error("Failed to fetch WhatsNew entries");
         }
