@@ -498,7 +498,7 @@ export const HeaderNine = () => {
                         <Link to="/courses-grid-view">Courses</Link>
                         <ul className="custom-dropdown">
                           <li>
-                            <div className="dropdown-header">Select a category</div>
+                            {/* <div className="dropdown-header"></div> */}
                             {categories.map((category) => (
                               <li key={category._id}>
                                 <Link
